@@ -16,7 +16,7 @@ namespace MyModules.SingleTon
         {
         }
 
-        // 변수를 이용한 방법
+        // 변수를 이용한 방법1
         public static UserInfoSingleton Instance
         {
             get
@@ -29,14 +29,14 @@ namespace MyModules.SingleTon
             }
         }
 
-        // 변수를 이용한 방법
+        // 변수를 이용한 방법2
         public static UserInfoSingleton GetInstance()
         {
             if (instance == null)
             {
                 instance = new UserInfoSingleton();
             }
-            return instance;
+            return instance; 
         }
 
         public string Userid
@@ -47,7 +47,7 @@ namespace MyModules.SingleTon
             }
             set
             {
-                this.userid = value;
+                this.userid = value; 
             }
         }
 
